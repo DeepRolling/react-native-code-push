@@ -355,8 +355,12 @@ public class CodePushNativeModule extends ReactContextBaseJavaModule {
         try {
             WritableMap configMap =  Arguments.createMap();
             configMap.putString("appVersion", mCodePush.getAppVersion());
-            mClientUniqueId = Settings.Secure.getString(reactContext.getContentResolver(), Settings.Secure.ANDROID_ID);
-            configMap.putString("clientUniqueId", mClientUniqueId);
+            //don't pass this fucking stupid field to everywhere !!! (privacy lint)
+//             final Activity currentActivity = getCurrentActivity();
+//             if (currentActivity != null) {
+//                 mClientUniqueId = Settings.Secure.getString(getCurrentActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
+//                 configMap.putString("clientUniqueId", mClientUniqueId);
+//             }
             configMap.putString("deploymentKey", mCodePush.getDeploymentKey());
             configMap.putString("serverUrl", mCodePush.getServerUrl());
 

@@ -15,6 +15,8 @@
   "scripts": {
     "clean": "shx rm -rf bin",
     "setup": "npm install --quiet --no-progress",
+    "publish": "gitpkg publish",
+    "delete-published": "git push --delete origin react-native-code-push-v7.0.5-gitpkg",
     "prebuild:tests": "npm run clean && npm run tslint",
     "build:tests": "tsc",
     "test": "npm run build:tests && npm run test:setup && npm run test:fast",
@@ -54,6 +56,7 @@
     "code-push-plugin-testing-framework": "file:./code-push-plugin-testing-framework",
     "del": "latest",
     "express": "latest",
+    "gitpkg": "^1.0.0-beta.4",
     "mkdirp": "latest",
     "mocha": "^9.2.0",
     "q": "^1.5.1",

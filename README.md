@@ -2,6 +2,14 @@
 
 #### [Sign up With App Center](https://appcenter.ms/signup?utm_source=CodePush&utm_medium=Azure) to use CodePush
 
+# Notice
+
+This package is modified to fit application store privacy strategy by adjust some code.
+
+Base on offical react-native-code-push v7.0.5 and published as a tag (v7.0.5-gitpkg) by [gitpkg](github.com/ramasilveyra/gitpkg#readme)
+
+Only for personal usage~ So, use with caution !!!
+
 # React Native Module for CodePush
 
 *Note: This README is only relevant to the latest version of our plugin. If you are using an older version, please switch to the relevant tag on [our GitHub repo](https://github.com/microsoft/react-native-code-push) to view the docs for that particular version.*

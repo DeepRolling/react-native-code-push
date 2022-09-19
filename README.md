@@ -6,9 +6,17 @@
 
 This package is modified to fit application store privacy strategy by adjust some code.
 
-Base on offical react-native-code-push v7.0.5 and published as a tag (v7.0.5-gitpkg) by [gitpkg](github.com/ramasilveyra/gitpkg#readme)
+Base on offical react-native-code-push v7.0.5 and published as tags by [gitpkg](github.com/ramasilveyra/gitpkg#readme)
 
 Only for personal usage~ So, use with caution !!!
+
+Changes:
+
+1. remove function invoke used to get ANDROID_ID from codebase
+> already published as a git tag **_react-native-code-push-v7.0.5-gitpkg_**
+2. fix android [gradle build script error](https://github.com/microsoft/react-native-code-push/issues/1578)
+> already published as a git tag **_react-native-code-push-v7.0.5-gitpkg-fix_**
+
 
 # React Native Module for CodePush
 

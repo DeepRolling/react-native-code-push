@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "shx rm -rf bin",
     "setup": "npm install --quiet --no-progress",
-    "publish": "gitpkg publish",
+    "publish-tag": "gitpkg publish",
     "delete-published": "git push --delete origin react-native-code-push-v7.0.5-gitpkg",
     "prebuild:tests": "npm run clean && npm run tslint",
     "build:tests": "tsc",
